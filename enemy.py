@@ -19,7 +19,7 @@ class Enemy(pg.sprite.Sprite):
             if self.rect.left > 0:
                 self.rect.move_ip(-10, 0)
         if direction == 1:
-            if self.rect.right < SCREEN_WIDTH:
+            if self.rect.right < WINDOW_WIDTH:
                 self.rect.move_ip(10, 0)
         if direction == 2:
             if self.rect.top > GAME_TOP:
